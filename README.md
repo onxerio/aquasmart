@@ -1,1 +1,134 @@
-# aquasmart
+AquaSmart v5.1
+Presented at APSD 2026 — Africa Public Service Day, KICC Nairobi
+"Enhancing Public Sector Institutions and Empowering Multi-Stakeholder Partnerships to Achieve Universal Water Availability and Safe Sanitation by 2063"
+
+💧 AQUASMART 
+A 7-stage intelligent water purification and monitoring system with real-time heavy metal detection, adaptive electrochemical treatment, cryptographic audit logging, and a role-based digital command dashboard.
+
+=PROBLEM 
+Only 36% of Kenyans use a safely managed drinking water service (UN SDG Tracker, 2024).
+Kenya has boreholes. Millions drink from them daily. But groundwater quality testing requires a manual sample sent to one of 10 labs nationwide, costing KES 5,000 per analysis. Results take days. No institution currently watches thousands of individual community boreholes continuously for contamination.
+Chemical contaminants — fluoride, arsenic, iron, cadmium, manganese, chromium — occur widely in groundwater used for drinking but are not regularly monitored.
+AquaSmart is the missing layer.
+The System
+7-Stage Treatment Pipeline
+Stage
+Process
+Function
+0
+
+*Pre-filter
+Removes sediment, protects downstream electrodes
+1A
+Capacitive Deionization (CDI)
+Ion adsorption at 1.4V — removes salts, nitrates. Auto-extends 10→20min at high TDS
+1B
+Electrocoagulation (EC)
+12V aluminium electrodes, polarity reversal every 10s. Removes ~75% fluoride, turbidity, bacteria
+2
+Bone Char Filter
+Removes remaining fluoride. ~96% total removal combined with Stage 1B
+3
+DPASV Detection
+Electrochemical heavy metal identification — see below
+4
+Activated Carbon + Mineral Stones
+Removes odour/chlorine, restores minerals
+5
+TDS Safety Gate
+Physical outlet lock if TDS > 500 PPM. Water cannot leave unsafe by design
+6
+UV-C Disinfection (265nm)
+2–3 log inactivation of bacteria, viruses, protozoa. Zero chemicals
+Stage 3 — DPASV Heavy Metal Detection
+Differential Pulse Anodic Stripping Voltammetry. The intelligence of the system.
+Signal path: Arduino PWM → RC low-pass filter → LM358 unity-gain follower → Graphene Oxide working electrode
+GO electrode synthesized in-house via modified Hummers method (pencil graphite + H₂SO₄ + KMnO₄). Cost: near zero. Yield: 50–100 replacement electrodes per batch.
+Metals Detected vs WHO Limits
+Metal
+Stripping Voltage
+WHO Limit
+Health Risk
+Iron (Fe)
+−0.5V
+0.3 mg/L
+Taste, staining
+Cadmium (Cd)
+−0.6V
+0.003 mg/L
+Kidney accumulation (10–30 years)
+Manganese (Mn)
+−0.7V
+0.4 mg/L
+Neurological damage
+Arsenic (As)
+−0.8V
+0.010 mg/L
+Group 1 carcinogen
+Chromium (Cr)
+−0.9V
+0.05 mg/L
+Carcinogenic (Cr VI)
+Hardware
+Arduino Uno (control brain)
+2× L298N motor drivers
+1× Single-channel relay (UV-C)
+ZGA25RP gearbox motor (EC mixing)
+2× TDS sensors (inlet + safety gate)
+LM358 op-amp + RC filter (DPASV signal)
+Carbon rods + activated charcoal (CDI electrodes)
+Aluminium plates (EC electrodes)
+Graphene oxide working electrode (DPASV, in-house)
+12V adapter primary power
+Dashboard — Digital Command Layer
+Single HTML file. No server. No installation. Deployable anywhere.
+Features
+Live 7-stage pipeline view — real-time stage status
+CDI health panel — electrode voltage, treatment duration, high-TDS mode
+DPASV readout — metal concentrations vs WHO limits per batch
+SHA-256 hash chain audit log — tamper-evident treatment history. Every record cryptographically sealed to the previous one
+4 user roles — Super Admin, Admin, Operator, Viewer. Strict permission scoping
+SCADA protection — 3-attempt lockout, 30-minute session timeout
+AQUA Agent — AI water quality officer (Groq API, LLaMA 3.3 70B). Role-aware. Live data. Zero hardware execution privileges
+Multilingual ticker — English, Swahili, Kikuyu, Kamba
+Legal & Regulatory Compliance
+Framework
+Relevance
+WHO GDWQ (4th Ed.)
+All detection thresholds mapped directly
+Water Act Sections 21 & 111
+National water quality database duty
+Water Act Sections 143 & 147
+Pollution fines up to KES 1M — audit log provides evidence trail
+EMCA CAP.387 Section 91
+Hazardous waste — GO electrode disposal logged in hash chain
+EMCA Section 142
+Fines up to KES 5M — operator compliance by design
+KEBS KS 459
+Kenya national drinking water standard
+AU Agenda 2063 Goal 1
+Continental safe water access mandate
+Scale Model
+Hub and spoke. Water services provider owns central dashboard. AquaSmart units mount directly onto community boreholes — no new pipeline infrastructure.
+Financing: M-KOPA-style pay-as-you-go mobile money tariff per litre. Self-sustaining utility, not a one-time government expense.
+Data licensing: County governments, NGOs, and water boards license continuous borehole quality data — the resolution of coverage that does not exist in Kenya today.
+Unit cost: Under KES 8,000 at component cost.
+What's Built vs Roadmap
+✅ Built and Working
+Full 7-stage purification train
+DPASV detection circuit
+SHA-256 hash chain audit log
+AQUA Agent on live data
+EMCA-aligned waste disposal log
+Role-based dashboard with SCADA protection
+🔜 Roadmap
+Production cloud backend
+NEMA-licensed physical waste containment
+Regulator-facing data API
+Mobile money valve control
+Multi-unit field deployment across 47 counties
+Team
+Name
+Role
+
+📧 GitHub: @onxerio
