@@ -2,6 +2,10 @@ AquaSmart v5.1
 Presented at APSD 2026 — Africa Public Service Day, KICC Nairobi
 "Enhancing Public Sector Institutions and Empowering Multi-Stakeholder Partnerships to Achieve Universal Water Availability and Safe Sanitation by 2063"
 
+
+Diagram: ![AquaSmart Schematic](assets/aquasmart-schematic.svg)
+
+
 💧 AQUASMART 
 A 7-stage intelligent water purification and monitoring system with real-time heavy metal detection, adaptive electrochemical treatment, cryptographic audit logging, and a role-based digital command dashboard.
 
@@ -12,40 +16,28 @@ Chemical contaminants — fluoride, arsenic, iron, cadmium, manganese, chromium 
 AquaSmart is the missing layer.
 The System
 7-Stage Treatment Pipeline
-Stage
-Process
-Function
-0
 
 *Pre-filter
 Removes sediment, protects downstream electrodes
-1A
-Capacitive Deionization (CDI)
+
+ CDI
 Ion adsorption at 1.4V — removes salts, nitrates. Auto-extends 10→20min at high TDS
-1B
+
 Electrocoagulation (EC)
 12V aluminium electrodes, polarity reversal every 10s. Removes ~75% fluoride, turbidity, bacteria
-2
-Bone Char Filter
-Removes remaining fluoride. ~96% total removal combined with Stage 1B
-3
+
 DPASV Detection
-Electrochemical heavy metal identification — see below
-4
-Activated Carbon + Mineral Stones
+Electrochemical heavy metal identification 
+
+Taste Regeneration 
 Removes odour/chlorine, restores minerals
-5
+
 TDS Safety Gate
 Physical outlet lock if TDS > 500 PPM. Water cannot leave unsafe by design
-6
-UV-C Disinfection (265nm)
+
+UV-C Disinfection 
 2–3 log inactivation of bacteria, viruses, protozoa. Zero chemicals
-Stage 3 — DPASV Heavy Metal Detection
-Differential Pulse Anodic Stripping Voltammetry. The intelligence of the system.
-Signal path: Arduino PWM → RC low-pass filter → LM358 unity-gain follower → Graphene Oxide working electrode
-GO electrode synthesized in-house via modified Hummers method (pencil graphite + H₂SO₄ + KMnO₄). Cost: near zero. Yield: 50–100 replacement electrodes per batch.
-Metals Detected vs WHO Limits
-Metal
+
 Stripping Voltage
 WHO Limit
 Health Risk
@@ -69,19 +61,8 @@ Chromium (Cr)
 −0.9V
 0.05 mg/L
 Carcinogenic (Cr VI)
-Hardware
-Arduino Uno (control brain)
-2× L298N motor drivers
-1× Single-channel relay (UV-C)
-ZGA25RP gearbox motor (EC mixing)
-2× TDS sensors (inlet + safety gate)
-LM358 op-amp + RC filter (DPASV signal)
-Carbon rods + activated charcoal (CDI electrodes)
-Aluminium plates (EC electrodes)
-Graphene oxide working electrode (DPASV, in-house)
-12V adapter primary power
-Dashboard — Digital Command Layer
-Single HTML file. No server. No installation. Deployable anywhere.
+
+
 Features
 Live 7-stage pipeline view — real-time stage status
 CDI health panel — electrode voltage, treatment duration, high-TDS mode
@@ -112,23 +93,7 @@ Scale Model
 Hub and spoke. Water services provider owns central dashboard. AquaSmart units mount directly onto community boreholes — no new pipeline infrastructure.
 Financing: M-KOPA-style pay-as-you-go mobile money tariff per litre. Self-sustaining utility, not a one-time government expense.
 Data licensing: County governments, NGOs, and water boards license continuous borehole quality data — the resolution of coverage that does not exist in Kenya today.
-Unit cost: Under KES 8,000 at component cost.
-What's Built vs Roadmap
-✅ Built and Working
-Full 7-stage purification train
-DPASV detection circuit
-SHA-256 hash chain audit log
-AQUA Agent on live data
-EMCA-aligned waste disposal log
-Role-based dashboard with SCADA protection
-🔜 Roadmap
-Production cloud backend
-NEMA-licensed physical waste containment
-Regulator-facing data API
-Mobile money valve control
-Multi-unit field deployment across 47 counties
-Team
-Name
-Role
+Unit cost: Under KES 30,000 at component cost.
+
 
 📧 GitHub: @onxerio
