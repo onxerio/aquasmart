@@ -1,6 +1,4 @@
-AquaSmart v5.1
-Presented at APSD 2026 — Africa Public Service Day, KICC Nairobi
-"Enhancing Public Sector Institutions and Empowering Multi-Stakeholder Partnerships to Achieve Universal Water Availability and Safe Sanitation by 2063"
+
 
 
 Diagram: ![AquaSmart Schematic](assets/aquasmart-schematic.svg)
