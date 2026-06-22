@@ -1,1 +1,247 @@
 
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1400" width="1000" height="1400" font-family="'Georgia', serif">
+
+  <!-- White background like lab paper -->
+  <rect width="1000" height="1400" fill="#fafaf7"/>
+
+  <!-- Border -->
+  <rect x="12" y="12" width="976" height="1376" fill="none" stroke="#2c2c2c" stroke-width="2"/>
+  <rect x="18" y="18" width="964" height="1364" fill="none" stroke="#2c2c2c" stroke-width="0.5"/>
+
+  <!-- Title block -->
+  <text x="500" y="52" text-anchor="middle" font-size="20" font-weight="bold" fill="#1a1a1a" letter-spacing="1">AquaSmart v5.1 — Water Purification System</text>
+  <text x="500" y="72" text-anchor="middle" font-size="12" fill="#444" font-style="italic">Apparatus Schematic · 6-Stage Adaptive Treatment ·</text>
+  <line x1="40" y1="82" x2="960" y2="82" stroke="#2c2c2c" stroke-width="1"/>
+
+  <!-- ============ STAGE 0: Cotton Pre-filter ============ -->
+  <!-- Funnel shape -->
+  <polygon points="380,100 620,100 580,160 420,160" fill="#dbeafe" stroke="#1e40af" stroke-width="2"/>
+  <!-- cotton texture lines inside funnel -->
+  <line x1="420" y1="115" x2="580" y2="115" stroke="#93c5fd" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <line x1="425" y1="128" x2="575" y2="128" stroke="#93c5fd" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <line x1="430" y1="141" x2="570" y2="141" stroke="#93c5fd" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <!-- funnel stem -->
+  <rect x="488" y="160" width="24" height="30" fill="#dbeafe" stroke="#1e40af" stroke-width="2"/>
+  <!-- label -->
+  <text x="500" y="98" text-anchor="middle" font-size="11" fill="#1e40af" font-weight="bold">STAGE 0</text>
+  <text x="680" y="125" font-size="11" fill="#1e3a8a" font-style="italic">Cotton Pre-filter</text>
+  <text x="680" y="140" font-size="10" fill="#555">Removes sediment &amp;</text>
+  <text x="680" y="153" font-size="10" fill="#555">suspended solids</text>
+  <!-- water input arrow -->
+  <text x="500" y="94" text-anchor="middle" font-size="9" fill="#2563eb">▼ Contaminated Water In</text>
+
+  <!-- pipe down -->
+  <rect x="488" y="190" width="24" height="25" fill="#bfdbfe" stroke="#1e40af" stroke-width="1.5"/>
+
+  <!-- ============ STAGE 1A: CDI Chamber ============ -->
+  <!-- Chamber vessel (tall rectangle) -->
+  <rect x="360" y="215" width="280" height="140" rx="4" fill="#fef9c3" stroke="#854d0e" stroke-width="2.5"/>
+  <!-- water level fill -->
+  <rect x="362" y="280" width="276" height="73" rx="0" fill="#bfdbfe" opacity="0.4"/>
+  <!-- CDI electrodes — carbon rods -->
+  <rect x="400" y="230" width="14" height="110" rx="3" fill="#1c1917" stroke="#292524" stroke-width="1"/>
+  <rect x="430" y="230" width="14" height="110" rx="3" fill="#1c1917" stroke="#292524" stroke-width="1"/>
+  <rect x="460" y="230" width="14" height="110" rx="3" fill="#1c1917" stroke="#292524" stroke-width="1"/>
+  <!-- charcoal pouches between rods -->
+  <rect x="414" y="245" width="16" height="80" rx="2" fill="#78716c" stroke="#57534e" stroke-width="1" stroke-dasharray="3,2"/>
+  <rect x="444" y="245" width="16" height="80" rx="2" fill="#78716c" stroke="#57534e" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- +/- labels on electrodes -->
+  <text x="404" y="226" font-size="11" fill="#dc2626" font-weight="bold">+</text>
+  <text x="434" y="226" font-size="11" fill="#2563eb" font-weight="bold">−</text>
+  <text x="464" y="226" font-size="11" fill="#dc2626" font-weight="bold">+</text>
+  <!-- voltage wire lines -->
+  <line x1="407" y1="222" x2="407" y2="215" stroke="#dc2626" stroke-width="1.5"/>
+  <line x1="437" y1="222" x2="437" y2="215" stroke="#2563eb" stroke-width="1.5"/>
+  <line x1="467" y1="222" x2="467" y2="215" stroke="#dc2626" stroke-width="1.5"/>
+  <line x1="407" y1="215" x2="467" y2="215" stroke="#6b7280" stroke-width="1"/>
+  <text x="437" y="212" text-anchor="middle" font-size="9" fill="#6b7280">1.4V DC (L298N #1 Ch.A)</text>
+
+  <!-- stage label -->
+  <text x="530" y="233" font-size="10" fill="#854d0e" font-weight="bold">STAGE 1A — CDI</text>
+  <text x="530" y="248" font-size="10" fill="#555">Capacitive Deionisation</text>
+  <text x="530" y="263" font-size="10" fill="#555">Carbon rod electrodes</text>
+  <text x="530" y="278" font-size="10" fill="#555">Activated charcoal pouches</text>
+  <text x="530" y="293" font-size="10" fill="#555">10 min std · 20 min high-TDS</text>
+  <text x="530" y="308" font-size="10" fill="#555">Removes: dissolved salts,</text>
+  <text x="530" y="321" font-size="10" fill="#555">ionic contaminants</text>
+
+  <!-- Legend inside vessel -->
+  <rect x="368" y="330" width="8" height="8" fill="#1c1917"/>
+  <text x="380" y="339" font-size="9" fill="#292524" font-style="italic">Carbon rod</text>
+  <rect x="368" y="343" width="8" height="8" fill="#78716c" stroke="#57534e" stroke-width="0.5" stroke-dasharray="2,1"/>
+  <text x="380" y="352" font-size="9" fill="#292524" font-style="italic">Charcoal pouch</text>
+
+  <!-- pipe down -->
+  <rect x="488" y="355" width="24" height="25" fill="#bfdbfe" stroke="#1e40af" stroke-width="1.5"/>
+
+  <!-- ============ STAGE 1B: EC Chamber ============ -->
+  <rect x="360" y="380" width="280" height="150" rx="4" fill="#f0fdf4" stroke="#166534" stroke-width="2.5"/>
+  <!-- water fill -->
+  <rect x="362" y="440" width="276" height="88" rx="0" fill="#bbf7d0" opacity="0.45"/>
+
+  <!-- aluminium plates -->
+  <rect x="395" y="395" width="18" height="120" rx="2" fill="#d1d5db" stroke="#9ca3af" stroke-width="1.5"/>
+  <rect x="430" y="395" width="18" height="120" rx="2" fill="#9ca3af" stroke="#6b7280" stroke-width="1.5"/>
+  <rect x="465" y="395" width="18" height="120" rx="2" fill="#d1d5db" stroke="#9ca3af" stroke-width="1.5"/>
+  <!-- Al labels -->
+  <text x="397" y="392" font-size="9" fill="#374151" font-weight="bold">Al</text>
+  <text x="432" y="392" font-size="9" fill="#374151" font-weight="bold">Al</text>
+  <text x="467" y="392" font-size="9" fill="#374151" font-weight="bold">Al</text>
+
+  <!-- polarity arrows -->
+  <text x="400" y="525" font-size="10" fill="#dc2626">+</text>
+  <text x="435" y="525" font-size="10" fill="#2563eb">−</text>
+  <text x="470" y="525" font-size="10" fill="#dc2626">+</text>
+
+  <!-- mixing motor symbol -->
+  <circle cx="340" cy="455" r="18" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+  <text x="340" y="451" text-anchor="middle" font-size="8" fill="#92400e">ZGA</text>
+  <text x="340" y="462" text-anchor="middle" font-size="8" fill="#92400e">25RP</text>
+  <line x1="358" y1="455" x2="368" y2="455" stroke="#d97706" stroke-width="2"/>
+  <text x="310" y="480" font-size="9" fill="#92400e" text-anchor="middle">Motor</text>
+  <text x="310" y="491" font-size="9" fill="#92400e" text-anchor="middle">1min ON</text>
+  <text x="310" y="502" font-size="9" fill="#92400e" text-anchor="middle">2min OFF</text>
+
+  <!-- polarity reversal arrow -->
+  <path d="M 415 388 Q 440 378 465 388" fill="none" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <text x="440" y="375" text-anchor="middle" font-size="8" fill="#dc2626">polarity reversal / 10s</text>
+
+  <!-- stage label -->
+  <text x="530" y="398" font-size="10" fill="#166534" font-weight="bold">STAGE 1B — EC</text>
+  <text x="530" y="413" font-size="10" fill="#555">Electrocoagulation</text>
+  <text x="530" y="428" font-size="10" fill="#555">Aluminium plates · 12V</text>
+  <text x="530" y="443" font-size="10" fill="#555">L298N #1 Ch.B</text>
+  <text x="530" y="458" font-size="10" fill="#555">25 min treatment</text>
+  <text x="530" y="473" font-size="10" fill="#555">Removes: turbidity,</text>
+  <text x="530" y="488" font-size="10" fill="#555">heavy metals, bacteria</text>
+
+  <!-- Al legend -->
+  <rect x="368" y="510" width="12" height="12" fill="#d1d5db" stroke="#9ca3af" stroke-width="1"/>
+  <text x="384" y="521" font-size="9" fill="#292524" font-style="italic">Aluminium plate electrode</text>
+
+  <!-- pipe down -->
+  <rect x="488" y="530" width="24" height="25" fill="#bfdbfe" stroke="#1e40af" stroke-width="1.5"/>
+
+< truncated lines 124-227 >
+  <ellipse cx="480" cy="988" rx="8" ry="5" fill="#a8a29e" stroke="#78716c" stroke-width="0.5"/>
+  <ellipse cx="505" cy="994" rx="10" ry="6" fill="#d6d3d1" stroke="#a8a29e" stroke-width="0.5"/>
+  <ellipse cx="530" cy="987" rx="9" ry="6" fill="#a8a29e" stroke="#78716c" stroke-width="0.5"/>
+  <ellipse cx="555" cy="993" rx="8" ry="5" fill="#d6d3d1" stroke="#a8a29e" stroke-width="0.5"/>
+  <ellipse cx="578" cy="987" rx="9" ry="6" fill="#a8a29e" stroke="#78716c" stroke-width="0.5"/>
+
+  <!-- dividing mesh line between carbon and stones -->
+  <line x1="393" y1="948" x2="607" y2="948" stroke="#6b7280" stroke-width="1.5" stroke-dasharray="5,3"/>
+
+  <!-- labels -->
+  <text x="270" y="910" font-size="10" fill="#15803d" font-weight="bold">STAGE 4</text>
+  <text x="255" y="925" font-size="10" fill="#15803d">Activated Carbon</text>
+  <text x="262" y="940" font-size="10" fill="#15803d">+ Mineral Stones</text>
+  <text x="255" y="958" font-size="10" fill="#555">Passive gravity</text>
+  <text x="255" y="972" font-size="10" fill="#555">No sensor</text>
+  <text x="255" y="992" font-size="10" fill="#555">Removes: chlorine,</text>
+  <text x="255" y="1006" font-size="10" fill="#555">odour, taste,</text>
+  <text x="255" y="1020" font-size="10" fill="#555">residual organics</text>
+
+  <!-- pipe down -->
+  <rect x="488" y="1015" width="24" height="25" fill="#bfdbfe" stroke="#1e40af" stroke-width="1.5"/>
+
+  <!-- TDS 2 sensor -->
+  <rect x="380" y="1040" width="240" height="48" rx="4" fill="#f0f9ff" stroke="#0369a1" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="500" y="1059" text-anchor="middle" font-size="11" fill="#0369a1" font-weight="bold">TDS Sensor 2 · Safety Gate  (Pin A1)</text>
+  <text x="500" y="1075" text-anchor="middle" font-size="10" fill="#555" font-style="italic">Pass → open valve  ·  Fail → recirculate  ·  LED blink</text>
+  <rect x="466" y="1043" width="6" height="40" fill="#0369a1" opacity="0.6"/>
+  <rect x="528" y="1043" width="6" height="40" fill="#0369a1" opacity="0.6"/>
+
+  <!-- pipe down -->
+  <rect x="488" y="1088" width="24" height="25" fill="#bfdbfe" stroke="#1e40af" stroke-width="1.5"/>
+
+  <!-- ============ STAGE 6: UV-C ============ -->
+  <rect x="370" y="1113" width="260" height="110" rx="8" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2.5"/>
+  <!-- UV lamp -->
+  <rect x="430" y="1128" width="140" height="30" rx="15" fill="#fef08a" stroke="#ca8a04" stroke-width="2"/>
+  <!-- glow rays -->
+  <line x1="500" y1="1120" x2="500" y2="1112" stroke="#facc15" stroke-width="1.5"/>
+  <line x1="520" y1="1122" x2="528" y2="1115" stroke="#facc15" stroke-width="1.5"/>
+  <line x1="480" y1="1122" x2="472" y2="1115" stroke="#facc15" stroke-width="1.5"/>
+  <line x1="538" y1="1128" x2="546" y2="1122" stroke="#facc15" stroke-width="1.5"/>
+  <line x1="462" y1="1128" x2="454" y2="1122" stroke="#facc15" stroke-width="1.5"/>
+  <text x="500" y="1148" text-anchor="middle" font-size="10" fill="#713f12" font-weight="bold">UV-C Lamp</text>
+  <!-- water fill below lamp -->
+  <rect x="373" y="1160" width="254" height="60" rx="4" fill="#bfdbfe" opacity="0.5"/>
+  <!-- relay label -->
+  <rect x="640" y="1128" width="80" height="38" rx="3" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="680" y="1143" text-anchor="middle" font-size="9" fill="#92400e" font-weight="bold">Relay</text>
+  <text x="680" y="1156" text-anchor="middle" font-size="8" fill="#555">Pin D9</text>
+  <text x="680" y="1168" text-anchor="middle" font-size="8" fill="#555">30 sec</text>
+  <line x1="630" y1="1143" x2="640" y2="1143" stroke="#d97706" stroke-width="1.5"/>
+
+  <!-- stage label -->
+  <text x="240" y="1133" font-size="10" fill="#1d4ed8" font-weight="bold">STAGE 6</text>
+  <text x="230" y="1148" font-size="10" fill="#1d4ed8">UV-C Disinfection</text>
+  <text x="222" y="1166" font-size="10" fill="#555">Single relay · 30s</text>
+  <text x="222" y="1181" font-size="10" fill="#555">Kills bacteria,</text>
+  <text x="222" y="1196" font-size="10" fill="#555">viruses, pathogens</text>
+
+  <!-- pipe down (output) -->
+  <rect x="488" y="1223" width="24" height="30" fill="#bfdbfe" stroke="#1e40af" stroke-width="2"/>
+
+  <!-- Output tap -->
+  <path d="M460,1253 L540,1253 L540,1270 L510,1270 L510,1290 L490,1290 L490,1270 L460,1270 Z" fill="#bfdbfe" stroke="#1e40af" stroke-width="2"/>
+  <!-- water drops -->
+  <ellipse cx="500" cy="1302" rx="5" ry="7" fill="#60a5fa" opacity="0.8"/>
+  <ellipse cx="492" cy="1316" rx="4" ry="6" fill="#93c5fd" opacity="0.7"/>
+  <ellipse cx="508" cy="1320" rx="4" ry="6" fill="#60a5fa" opacity="0.6"/>
+
+  <!-- Output label -->
+  <text x="500" y="1345" text-anchor="middle" font-size="13" fill="#1d4ed8" font-weight="bold">✓ Clean Water Output</text>
+  <text x="500" y="1362" text-anchor="middle" font-size="10" fill="#555" font-style="italic">AI verdict by AQUA Agent · Groq API · LLaMA 3.3 70B</text>
+
+  <!-- ============ FLOW ARROWS on pipe ============ -->
+  <text x="480" y="208" font-size="12" fill="#1d4ed8">↓</text>
+  <text x="480" y="374" font-size="12" fill="#1d4ed8">↓</text>
+  <text x="480" y="550" font-size="12" fill="#1d4ed8">↓</text>
+  <text x="480" y="625" font-size="12" fill="#1d4ed8">↓</text>
+  <text x="480" y="880" font-size="12" fill="#1d4ed8">↓</text>
+  <text x="480" y="1035" font-size="12" fill="#1d4ed8">↓</text>
+  <text x="480" y="1105" font-size="12" fill="#1d4ed8">↓</text>
+  <text x="480" y="1245" font-size="12" fill="#1d4ed8">↓</text>
+
+  <!-- ============ LEGEND BOX ============ -->
+  <rect x="30" y="100" width="190" height="195" rx="4" fill="#f8fafc" stroke="#94a3b8" stroke-width="1"/>
+  <text x="125" y="118" text-anchor="middle" font-size="11" fill="#1e293b" font-weight="bold">LEGEND</text>
+  <line x1="40" y1="122" x2="210" y2="122" stroke="#94a3b8" stroke-width="0.5"/>
+
+  <rect x="42" y="130" width="14" height="14" rx="2" fill="#fef9c3" stroke="#854d0e" stroke-width="1.5"/>
+  <text x="62" y="142" font-size="10" fill="#1e293b">Electrochemical chamber</text>
+
+  <rect x="42" y="150" width="14" height="14" rx="2" fill="#f0fdf4" stroke="#166534" stroke-width="1.5"/>
+  <text x="62" y="162" font-size="10" fill="#1e293b">Electrocoagulation</text>
+
+  <rect x="42" y="170" width="14" height="14" rx="2" fill="#fdf4ff" stroke="#7e22ce" stroke-width="1.5"/>
+  <text x="62" y="182" font-size="10" fill="#1e293b">DPASV cell</text>
+
+  <rect x="42" y="190" width="14" height="14" rx="2" fill="#f0fdf4" stroke="#15803d" stroke-width="1.5"/>
+  <text x="62" y="202" font-size="10" fill="#1e293b">Passive filtration</text>
+
+  <rect x="42" y="210" width="14" height="14" rx="2" fill="#eff6ff" stroke="#1d4ed8" stroke-width="1.5"/>
+  <text x="62" y="222" font-size="10" fill="#1e293b">UV-C chamber</text>
+
+  <rect x="42" y="230" width="14" height="8" rx="1" fill="#bfdbfe" stroke="#1e40af" stroke-width="1"/>
+  <text x="62" y="239" font-size="10" fill="#1e293b">Water flow pipe</text>
+
+  <rect x="42" y="248" width="14" height="8" rx="1" fill="#f8fafc" stroke="#0369a1" stroke-width="1" stroke-dasharray="4,2"/>
+  <text x="62" y="257" font-size="10" fill="#1e293b">TDS sensor inline</text>
+
+  <!-- Arduino block -->
+  <rect x="30" y="310" width="190" height="120" rx="4" fill="#f1f5f9" stroke="#475569" stroke-width="1.5"/>
+  <text x="125" y="328" text-anchor="middle" font-size="11" fill="#1e293b" font-weight="bold">Arduino Uno</text>
+  <line x1="40" y1="332" x2="210" y2="332" stroke="#94a3b8" stroke-width="0.5"/>
+  <text x="42" y="346" font-size="9" fill="#475569">D2/D4 → CDI (L298N #1 Ch.A)</text>
+  <text x="42" y="360" font-size="9" fill="#475569">D5/D6 → EC  (L298N #1 Ch.B)</text>
+  <text x="42" y="374" font-size="9" fill="#475569">D7/D8 → Motor (ZGA25RP)</text>
+  <text x="42" y="388" font-size="9" fill="#475569">D9     → Relay (UV-C)</text>
+  <text x="42" y="402" font-size="9" fill="#475569">D3     → DPASV PWM</text>
+  <text x="42" y="416" font-size="9" fill="#475569">A0/A1  → TDS 1 &amp; 2</text>
+  <text x="42" y="425" font-size="9" fill="#475569">A2     → LM358 DPASV out</text>
+
+</svg>
