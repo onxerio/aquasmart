@@ -1,97 +1,41 @@
+# 💧 AquaSmart
+
+**Turns any community borehole into a safe, self-monitoring water source — no lab test, no waiting days for results, no guessing if the water is safe to drink.**
+
+## The Problem
+
+Only **36% of Kenyans** have access to safely managed drinking water. Most communities rely on boreholes but testing that water for contamination costs **KES 5,000** and takes **days**, through one of just 10 labs in the whole country. In practice, almost no boreholes are tested regularly. People just drink and hope.
+
+## What AquaSmart Does
+
+AquaSmart sits on a borehole and automatically:
+- **Filters and purifies** the water in 7 stages — removing sediment, salts, fluoride, bacteria, and heavy metals
+- **Removes and Tests for 5 toxic metals** (iron, cadmium, manganese, arsenic, chromium) in real time, comparing against WHO safety limits
+- **Disinfects** with UV-C — no chemicals needed
+- **Logs every batch** in a tamper-proof digital record, so water authorities have verifiable proof of safety
+
+## The Dashboard
+
+A live command center showing exactly what's happening at every borehole, in real time:
+- **AQUA Agent** — an AI water quality officer that answers questions about water safety in plain language, in English or Swahili, grounded in live sensor data not guesses
+- **Tamper-proof audit trail** — every treatment cycle is cryptographically sealed, so no one can fake a "safe" reading after the fact
+
+one dashboard can watch thousands of boreholes at once.
+
+## Built for Kenyan Regulation
+
+Designed around the laws that actually govern this space:
+
+- **Water Act 2016** (Sections 21, 111, 143, 147) — national water quality reporting + pollution liability
+- **EMCA CAP.387** — hazardous waste handling and operator compliance
+- **KEBS KS 459** — Kenya's national drinking water standard
+- **WHO Guidelines for Drinking-water Quality (4th Ed.)** — all detection thresholds mapped directly to these limits
+
+Every audit log entry is built to serve as compliance evidence, not just a data point.
+
+.....
+
+- Gives counties and water boards real-time visibility into water quality they currently have no way to see
 
 
-
-Diagram: ![AquaSmart Schematic](assets/aquasmart-schematic.svg)
-
-
-💧 AQUASMART 
-A 7-stage intelligent water purification and monitoring system with real-time heavy metal detection, adaptive electrochemical treatment, cryptographic audit logging, and a role-based digital command dashboard.
-
-=PROBLEM 
-Only 36% of Kenyans use a safely managed drinking water service (UN SDG Tracker, 2024).
-Kenya has boreholes. Millions drink from them daily. But groundwater quality testing requires a manual sample sent to one of 10 labs nationwide, costing KES 5,000 per analysis. Results take days. No institution currently watches thousands of individual community boreholes continuously for contamination.
-Chemical contaminants — fluoride, arsenic, iron, cadmium, manganese, chromium — occur widely in groundwater used for drinking but are not regularly monitored.
-AquaSmart is the missing layer.
-The System
-7-Stage Treatment Pipeline
-
-*Pre-filter
-Removes sediment, protects downstream electrodes
-
- CDI
-Ion adsorption at 1.4V — removes salts, nitrates. Auto-extends 10→20min at high TDS
-
-Electrocoagulation (EC)
-12V aluminium electrodes, polarity reversal every 10s. Removes ~75% fluoride, turbidity, bacteria
-
-DPASV Detection
-Electrochemical heavy metal identification 
-
-Taste Regeneration 
-Removes odour/chlorine, restores minerals
-
-TDS Safety Gate
-Physical outlet lock if TDS > 500 PPM. Water cannot leave unsafe by design
-
-UV-C Disinfection 
-2–3 log inactivation of bacteria, viruses, protozoa. Zero chemicals
-
-Stripping Voltage
-WHO Limit
-Health Risk
-Iron (Fe)
-−0.5V
-0.3 mg/L
-Taste, staining
-Cadmium (Cd)
-−0.6V
-0.003 mg/L
-Kidney accumulation (10–30 years)
-Manganese (Mn)
-−0.7V
-0.4 mg/L
-Neurological damage
-Arsenic (As)
-−0.8V
-0.010 mg/L
-Group 1 carcinogen
-Chromium (Cr)
-−0.9V
-0.05 mg/L
-Carcinogenic (Cr VI)
-
-
-Features
-Live 7-stage pipeline view — real-time stage status
-CDI health panel — electrode voltage, treatment duration, high-TDS mode
-DPASV readout — metal concentrations vs WHO limits per batch
-SHA-256 hash chain audit log — tamper-evident treatment history. Every record cryptographically sealed to the previous one
-4 user roles — Super Admin, Admin, Operator, Viewer. Strict permission scoping
-SCADA protection — 3-attempt lockout, 30-minute session timeout
-AQUA Agent — AI water quality officer (Groq API, LLaMA 3.3 70B). Role-aware. Live data. Zero hardware execution privileges
-Multilingual ticker — English, Swahili, Kikuyu, Kamba
-Legal & Regulatory Compliance
-Framework
-Relevance
-WHO GDWQ (4th Ed.)
-All detection thresholds mapped directly
-Water Act Sections 21 & 111
-National water quality database duty
-Water Act Sections 143 & 147
-Pollution fines up to KES 1M — audit log provides evidence trail
-EMCA CAP.387 Section 91
-Hazardous waste — GO electrode disposal logged in hash chain
-EMCA Section 142
-Fines up to KES 5M — operator compliance by design
-KEBS KS 459
-Kenya national drinking water standard
-AU Agenda 2063 Goal 1
-Continental safe water access mandate
-Scale Model
-Hub and spoke. Water services provider owns central dashboard. AquaSmart units mount directly onto community boreholes — no new pipeline infrastructure.
-Financing: M-KOPA-style pay-as-you-go mobile money tariff per litre. Self-sustaining utility, not a one-time government expense.
-Data licensing: County governments, NGOs, and water boards license continuous borehole quality data — the resolution of coverage that does not exist in Kenya today.
-Unit cost: Under KES 30,000 at component cost.
-
-
-📧 GitHub: @onxerio
+📧 @ stephenonserio1082@gmail.com
